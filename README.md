@@ -5,6 +5,7 @@
 
 ## usage
   python test.py
+  
   result saved in ./res/experiment_id/args_id
 
 ## rely
