@@ -96,6 +96,14 @@ history = { "step":step,
             "PDF_angle_error":PDF_angle_error
             }
 
+#保存结果
+data["data"] = inference_res
+Crystals.res = inference_res
+#创建存放结果的文件夹，实验id/参数id，唯一
+try:
+    os.makedirs(Crystals.args.respath)
+except FileExistsError:
+    pass
 
 imgpath = []
 for root, dirs, files in os.walk(Crystals.args.imgpath):  # 此处有bug  如果调试的数据还放在这里，将会递归的遍历所有文件
@@ -133,14 +141,7 @@ for i in range(len(imgpath)):
 
 
 # pdb.set_trace()
-#保存结果
-data["data"] = inference_res
-Crystals.res = inference_res
-#创建存放结果的文件夹，实验id/参数id，唯一
-try:
-    os.makedirs(Crystals.args.respath)
-except FileExistsError:
-    pass
+
 
 datapath = os.path.join(Crystals.args.respath, 'data'+'.json')
 argspath = os.path.join(Crystals.args.respath, 'history'+'.json')

@@ -4,7 +4,6 @@ import pdb
 import os
 
 from unet3080 import *
-from data import *
 
 from skimage import measure
 import math
