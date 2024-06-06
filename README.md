@@ -10,7 +10,18 @@
 
 ## rely
   ```
-    
+@article{ZHANG2024103665,
+title = {Phase division and recognition of crystal HRTEM images based on machine learning and deep learning},
+journal = {Micron},
+pages = {103665},
+year = {2024},
+issn = {0968-4328},
+doi = {https://doi.org/10.1016/j.micron.2024.103665},
+url = {https://www.sciencedirect.com/science/article/pii/S0968432824000829},
+author = {Quan Zhang and Liang Yang and Ru Bai and Bo Peng and Yangyi Liu and Chang Duan and Chao Zhang},
+keywords = {HRTEM, PCA, NMF, U-net, Phase identification, Computer vision},
+}
+
 @article{ZHANG2023103402,
   title = {FFT pattern recognition of crystal HRTEM image with deep learning},
   journal = {Micron},
